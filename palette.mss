@@ -18,8 +18,7 @@
 /* ================================================================== */
 
 /* directory to load fonts from in addition to the system directories */
-/*Map { font-directory: url(./fonts); }*/
-Map {}
+Map { font-directory: url(./fonts); }
 
 /* set up font sets for various weights and styles */
 @sans_lt:       "Open Sans Regular", "DejaVu Sans Book", "Arundina Sans Regular", "Padauk Regular", "Khmer OS Metal Chrieng Regular",
