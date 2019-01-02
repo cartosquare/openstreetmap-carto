@@ -1545,7 +1545,6 @@ Layer:
                 AND (tags->'location' NOT IN ('roof', 'rooftop') OR (tags->'location') IS NULL))
             OR "natural" IN ('spring')
             OR historic IN ('memorial', 'monument', 'archaeological_site', 'fort', 'castle', 'manor', 'city_gate')
-            OR military IN ('bunker')
             OR highway IN ('bus_stop', 'elevator', 'traffic_signals')
             OR (power = 'generator' AND tags @> '"generator:source"=>wind')
           ORDER BY way_area desc
@@ -1706,7 +1705,6 @@ Layer:
             OR "natural" IN ('peak', 'volcano', 'saddle', 'spring', 'cave_entrance')
             OR waterway IN ('waterfall')
             OR historic IN ('memorial', 'monument', 'archaeological_site', 'wayside_cross', 'fort', 'wayside_shrine', 'castle', 'manor', 'city_gate')
-            OR military IN ('bunker')
             OR tags @> 'emergency=>phone'
             OR highway IN ('bus_stop', 'elevator', 'traffic_signals')
             OR tags @> 'ford=>yes' OR tags @> 'ford=>stepping_stones'
@@ -2043,8 +2041,7 @@ Layer:
             name,
             CASE WHEN building = 'no' OR building IS NULL THEN 'no' ELSE 'yes' END AS is_building -- always no with the where conditions
           FROM planet_osm_polygon
-          WHERE (landuse IN ('forest', 'military', 'farmland')
-              OR military IN ('danger_area')
+          WHERE (landuse IN ('forest', 'farmland')
               OR "natural" IN ('wood', 'glacier', 'sand', 'scree', 'shingle', 'bare_rock', 'water', 'bay', 'strait', 'cape')
               OR "place" IN ('island')
               OR boundary IN ('national_park')
@@ -2180,7 +2177,6 @@ Layer:
                   AND (tags->'location' NOT IN ('roof', 'rooftop') OR (tags->'location') IS NULL))
               OR "natural" IS NOT NULL
               OR place IN ('island', 'islet')
-              OR military IN ('danger_area', 'bunker')
               OR historic IN ('memorial', 'monument', 'archaeological_site', 'fort', 'castle', 'manor', 'city_gate')
               OR highway IN ('services', 'rest_area', 'bus_stop', 'elevator')
               OR power IN ('plant', 'station', 'generator', 'sub_station', 'substation')
@@ -2371,7 +2367,7 @@ Layer:
                   OR leisure IS NOT NULL
                   OR landuse IN ('reservoir', 'basin', 'recreation_ground', 'village_green', 'quarry', 'vineyard', 'orchard', 'cemetery', 'residential',
                                  'garages', 'meadow', 'grass', 'allotments', 'forest', 'farmyard', 'farmland', 'greenhouse_horticulture',
-                                 'retail', 'industrial', 'railway', 'commercial', 'brownfield', 'landfill', 'construction', 'military', 'plant_nursery')
+                                 'retail', 'industrial', 'railway', 'commercial', 'brownfield', 'landfill', 'construction', 'plant_nursery')
                   OR (man_made IN ('lighthouse', 'windmill', 'mast', 'tower', 'water_tower', 'cross', 'obelisk', 'works', 'communications_tower',
                                    'telescope', 'chimney', 'storage_tank', 'silo', 'wastewater_plant', 'water_works')
                       AND (tags->'location' NOT IN ('roof', 'rooftop') OR (tags->'location') IS NULL))
@@ -2379,7 +2375,6 @@ Layer:
                   OR waterway IN ('waterfall')
                   OR place IN ('island', 'islet')
                   OR barrier IN ('toll_booth')
-                  OR military IN ('danger_area', 'bunker')
                   OR historic IN ('memorial', 'monument', 'archaeological_site', 'wayside_cross', 'fort', 'wayside_shrine', 'castle', 'manor', 'city_gate')
                   OR highway IN ('bus_stop', 'services', 'rest_area', 'elevator')
                   OR power IN ('plant', 'station', 'generator', 'sub_station', 'substation')
