@@ -36,8 +36,10 @@ _parts:
     extent: "-20037508,-20037508,20037508,20037508"
 
 Stylesheet:
+  - fonts.mss
   - style.mss
   - road.mss
+  - label.mss
 
 Layer:
   - id: landcover-low-zoom
