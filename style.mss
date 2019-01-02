@@ -86,3 +86,15 @@ Map {
     line-pattern-file:url(img/line_solid_6.png);
   }
 }
+
+#admin-high-zoom {
+  line-width:1.2;
+  line-color: #666;
+  line-opacity:0.8;
+  line-dasharray:2,1,3,1,1,1,4,1,5,1;
+  line-join: round;
+  line-cap: round;
+
+  [zoom>=5] { line-width: 1.8; }
+  [zoom>=7] { line-width: 2.2; }
+}
