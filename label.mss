@@ -42,6 +42,22 @@
   }
 }
 
+#text-point {
+  [zoom>=15] {
+    //text-face-name: 'Providence Sans Offc Pro Regular';
+    text-face-name: @oblique-fonts;
+    text-name: "[name]";
+    text-opacity: 0.80;
+    text-size: 12;
+    text-halo-fill: fadeout(#eee,85);
+    text-halo-rasterizer: fast;
+    text-halo-radius: 4;
+    [zoom>=17] {
+      text-size: 14;
+    }
+  }
+}
+
 #roads-text-name {
   [zoom>=16] {
     //text-face-name: 'Providence Sans Offc Pro Regular';
