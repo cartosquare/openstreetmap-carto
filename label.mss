@@ -36,6 +36,9 @@
     text-halo-fill: fadeout(#eee,85);
     text-halo-rasterizer: fast;
     text-halo-radius: 4;
+    text-placement: interior;
+    text-wrap-width: 30;
+    text-line-spacing: -1.65;
     [zoom>=17] {
       text-size: 16;
     }
@@ -43,7 +46,7 @@
 }
 
 #text-point {
-  [zoom>=15] {
+  [zoom>=17] {
     //text-face-name: 'Providence Sans Offc Pro Regular';
     text-face-name: @oblique-fonts;
     text-name: "[name]";
@@ -52,7 +55,12 @@
     text-halo-fill: fadeout(#eee,85);
     text-halo-rasterizer: fast;
     text-halo-radius: 4;
-    [zoom>=17] {
+
+    text-placement: interior;
+    text-wrap-width: 30;
+    text-line-spacing: -1.65;
+
+    [zoom>=18] {
       text-size: 14;
     }
   }
