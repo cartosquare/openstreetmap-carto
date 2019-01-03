@@ -8,6 +8,8 @@
   text-halo-fill: fadeout(#eee,90);
   text-halo-rasterizer: fast;
   text-halo-radius: 4;
+  text-margin: 3;
+  text-avoid-edges: true;
   [category=1] { text-size: 24; }
 }
 
@@ -22,6 +24,8 @@
       text-halo-fill: fadeout(#eee,90);
       text-halo-rasterizer: fast;
       text-halo-radius: 4;
+      text-margin: 3;
+      text-avoid-edges: true;
     }
   }
 }
@@ -39,6 +43,8 @@
     text-placement: interior;
     text-wrap-width: 30;
     text-line-spacing: -1.65;
+    text-margin: 3;
+    text-avoid-edges: true;
     [zoom>=16] {
       text-size: 16;
     }
@@ -59,6 +65,9 @@
     text-placement: interior;
     text-wrap-width: 30;
     text-line-spacing: -1.65;
+
+    text-margin: 3;
+    text-avoid-edges: true;
 
     [zoom>=16] {
       text-size: 14;
