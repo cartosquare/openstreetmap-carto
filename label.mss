@@ -41,7 +41,7 @@
     text-halo-rasterizer: fast;
     text-halo-radius: 4;
     text-placement: interior;
-    text-wrap-width: 30;
+    text-wrap-width: 50;
     text-line-spacing: -1.65;
     text-margin: 3;
     text-avoid-edges: true;
@@ -63,7 +63,7 @@
     text-halo-radius: 4;
 
     text-placement: interior;
-    text-wrap-width: 30;
+    text-wrap-width: 50;
     text-line-spacing: -1.65;
 
     text-margin: 3;
