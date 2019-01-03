@@ -27,7 +27,7 @@
 }
 
 #building-text {
-  [zoom>=17] {
+  [zoom>=15] {
     //text-face-name: 'Providence Sans Offc Pro Regular';
     text-face-name: @oblique-fonts;
     text-name: "[name]";
@@ -39,14 +39,14 @@
     text-placement: interior;
     text-wrap-width: 30;
     text-line-spacing: -1.65;
-    [zoom>=17] {
+    [zoom>=16] {
       text-size: 16;
     }
   }
 }
 
 #text-point {
-  [zoom>=17] {
+  [zoom>=15] {
     //text-face-name: 'Providence Sans Offc Pro Regular';
     text-face-name: @oblique-fonts;
     text-name: "[name]";
@@ -60,14 +60,14 @@
     text-wrap-width: 30;
     text-line-spacing: -1.65;
 
-    [zoom>=18] {
+    [zoom>=16] {
       text-size: 14;
     }
   }
 }
 
 #roads-text-name {
-  [zoom>=16] {
+  [zoom>=15] {
     //text-face-name: 'Providence Sans Offc Pro Regular';
     text-face-name: @oblique-fonts;
     text-name: "[name]";
