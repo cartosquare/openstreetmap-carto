@@ -87,5 +87,6 @@
     text-halo-radius: 2;
     text-placement: line;
     text-transform: uppercase;
+    text-placement: "line";
   }
 }
