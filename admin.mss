@@ -7,6 +7,9 @@
 for low, middle and high zoom levels.
 For each zoomlevel, all borders come from a single attachment, to handle
 overlapping borders correctly.
+admin_label=2: 国界
+In china: 3 - 特别行政区界限; 4 - 省级行政区；5 - 地级行政区；6 - 县级行政区；
+7 - N/A；8 - 乡镇/街道； 9 -> N/A; 10 - 村
 */
 
 #admin-low-zoom[zoom < 11],
