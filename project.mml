@@ -53,6 +53,8 @@ Stylesheet:
   - aerialways.mss
   - admin.mss
   - addressing.mss
+  - admin2.mss
+  
 Layer:
   - id: world
     geometry: polygon
@@ -1189,6 +1191,40 @@ Layer:
         ) AS admin_high_zoom
     properties:
       minzoom: 13
+  
+  - id: admin-label-points
+    geometry: point
+    <<: *extents
+    Datasource:
+      file: data/admin_boundary/admin_label_points.shp
+      type: shape
+    properties:
+      maxzoom: 19
+
+  - id: province
+    geometry: linestring
+    <<: *extents
+    Datasource:
+      file: data/admin_boundary/admin_province.shp
+      type: shape
+    properties:
+      maxzoom: 16
+  - id: city
+    geometry: linestring
+    <<: *extents
+    Datasource:
+      file: data/admin_boundary/admin_city.shp
+      type: shape
+    properties:
+      maxzoom: 19
+  - id: county
+    geometry: linestring
+    <<: *extents
+    Datasource:
+      file: data/admin_boundary/admin_county.shp
+      type: shape
+    properties:
+      maxzoom: 19
   - id: power-minorline
     geometry: linestring
     <<: *extents
