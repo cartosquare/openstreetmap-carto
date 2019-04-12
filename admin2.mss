@@ -30,17 +30,17 @@
   }
 }
 
-#admin-label-points[name = '${admin_filter}'][level = '${level_filter}'][position = '${position_filter}'] {
+/*
+Note: The level field is integer, here we assign string to it
+When convert to xml file, we should manually convert it to ingeger!!!
+*/
+#admin-label-points[name = '${point_filter}'][level = '${level_filter}'][position = '${position_filter}'] {
   text-name: "[name]";
   text-face-name: @book-fonts;
-  text-size: 36;
+  text-size: 32;
   text-fill: black;
   text-halo-radius: @standard-halo-radius;
   text-halo-fill: @standard-halo-fill;
   text-allow-overlap: true;
-  text-dy: 18;
-  [zoom >= 11] {
-    text-size: 46;
-    text-dy: 23;
-  }
+  text-dy: 16;
 }
